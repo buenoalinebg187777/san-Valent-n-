@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>San Valentín</title>
+<meta charset="UTF-8">
+<style>
+body {
+background-color: #E6E6FA;
+}
+.contenedor {
+text-align: center;
+margin-top: 100px;
+font-family: 'Playfair Display SC', serif;
+background-color: #E6E6FA;
+}
+.imagen {
+width: 300px;
+height: 300px;
+margin-bottom: 20px;
+transition: opacity 0.5s;
+display: block;
+margin: 0 auto;
+}
+.botones {
+display: flex;
+justify-content: center;
+margin-top: 20px;
+}
+.boton-chi {
+padding: 15px 30px;
+font-size: 24px;
+cursor: pointer;
+transition: font-size 0.5s, transform 0.5s;
+background-color: #4CAF50;
+color: #fff;
+border: none;
+border-radius: 5px;
+margin-right: 10px;
+}
+.boton-no {
+padding: 15px 30px;
+font-size: 24px;
+cursor: pointer;
+transition: font-size 0.5s, transform 0.5s;
+background-color: #f44336;
+color: #fff;
+border: none;
+border-radius: 5px;
+}
+</style>
+</head>
+<body>
+<div class="contenedor">
+<h1>¿Puedo ser tu San Valentín?</h1>
+<img src= "https://i.imgur.com/begorfe.jpg" alt="Imagen de San Valentín" class="imagen">
+<div class="botones">
+<button class="boton-chi" onclick="agrandarBoton()">Chi</button>
+<button class="boton-no" onclick="disminuirBoton()">No</button>
+</div>
+</div>
+<script>
+function agrandarBoton() {
+document.querySelector('.boton-chi').style.transform = 'scale(1.5)';
+}
+function disminuirBoton() {
+document.querySelector('.boton-no').style.transform = 'scale(0.5)';
+}
+</script>
+</body>
+</html>
